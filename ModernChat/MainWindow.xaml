@@ -39,76 +39,60 @@
 
                 <StackPanel HorizontalAlignment="Right"
                             Orientation="Horizontal">
-<<<<<<< HEAD
 
-=======
-                    
->>>>>>> dc448f8 (create a form , buttons)
                     <Button Width="20"  Height="20"
                             Content="🗕"
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
                             FontWeight="Bold"
-<<<<<<< HEAD
                             Margin="0,0,0,3"
                             Click="ButtonMinimize_Click"/>
 
-=======
-                            Margin="0,0,0,3"/>
-                    
->>>>>>> dc448f8 (create a form , buttons)
                     <Button Width="20"  Height="20"
                             Content="▢"
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
-<<<<<<< HEAD
+
                             FontWeight="Bold"
                             Click="WindowStateButton_Click"/>
 
-=======
-                            FontWeight="Bold"/>
-                    
->>>>>>> dc448f8 (create a form , buttons)
                     <Button Width="20"  Height="20"
                             Content="🞮"
                             Background="Transparent"
                             BorderThickness="0"
                             Foreground="Gray"
-<<<<<<< HEAD
                             FontWeight="Bold"
                             Click="CloseButton_Click"/>
 
                 </StackPanel>
 
-=======
-                            FontWeight="Bold"/>
-                    
-                </StackPanel>
-                
->>>>>>> dc448f8 (create a form , buttons)
+
             </Grid>
 
         </Border>
-        <Grid Background="#2F3136" Margin="0,25,0,-33"
+        <Grid Background="#2F3136" Margin="0,25,0,-40"
               >
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="0"/>
+                <RowDefinition/>
                 <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
 
             <Label Content="Контакты"
-                   VerticalAlignment="Top"
+                   VerticalAlignment="Center"
                    FontWeight="Medium"
                    Foreground="Gray"
-                   Margin="20,0,0,0" Height="30"/>
+                   Margin="8,0,0,0"/>
 
             <ListView ItemsSource="{Binding Contacts}"
                       Background="Transparent"
                       BorderThickness="0"
-                      Grid.Row="1" Margin="0,0,0,60" />
+                      Grid.Row="1"
+                      ItemContainerStyle="{StaticResource ContactCard}">
+                
+            </ListView>
 
         </Grid>
 
