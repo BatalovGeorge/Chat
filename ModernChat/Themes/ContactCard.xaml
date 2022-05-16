@@ -25,13 +25,17 @@
                                     Background="CornflowerBlue"
                                     CornerRadius="25"/>
 
+                            <Ellipse Width="30" Height="30">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="{Binding ImageSource}"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
                             <StackPanel>
-                                <Label Content="{Binding Username}"
+                                <Label Content="{Binding Username }"
                                        Foreground="White"/>
-                                <Label Content="{Binding LastMessage}"
+                                <Label Content="{Binding LastMessage }"
                                        Foreground="Gray"
                                        FontSize="10"/>
-
                             </StackPanel>
 
                         </StackPanel>

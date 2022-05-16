@@ -6,7 +6,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source=".\Themes\ContactCard.xaml"/>
+                <ResourceDictionary Source="\Themes\ContactCard.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             
         </ResourceDictionary>

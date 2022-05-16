@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ModernChat.MVVM.ViewModel
 {
-    internal class MainViewModel
+     class MainViewModel
     {
         public ObservableCollection<MessageModel> Messages { get; set; }
         public ObservableCollection<ContactModel> Contacts { get; set; }
@@ -20,7 +20,7 @@ namespace ModernChat.MVVM.ViewModel
 
             Messages.Add(new MessageModel
             {
-                Username = "Саня",
+                Username = "Sasha",
                 UsernameColor = "#409aff",
                 ImageSource = "https://i.imgur.com/ddkrJYj.png",
                 Message = "Test",

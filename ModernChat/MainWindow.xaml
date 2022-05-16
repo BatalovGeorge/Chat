@@ -7,7 +7,7 @@
         xmlns:viewmodel="clr-namespace:ModernChat.MVVM.ViewModel"
         mc:Ignorable="d"
         Height="650" Width="1200"
-        Background="#36393F"
+        Background="#3639"
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip">
@@ -72,7 +72,10 @@
             </Grid>
 
         </Border>
-        <Grid Background="#2F3136" Margin="0,25,0,-40"
+
+        <Grid Background="#2F3136"
+              Margin="0,25,0,-40"
+              Grid.Row="1"
               >
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
@@ -80,22 +83,24 @@
                 <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
 
-            <Label Content="Контакты"
+            <Label Content="Contacts"
                    VerticalAlignment="Center"
                    FontWeight="Medium"
                    Foreground="Gray"
                    Margin="8,0,0,0"/>
-
-            <ListView ItemsSource="{Binding Contacts}"
+        </Grid>
+        <Grid Grid.Row="1">
+                <StackPanel Margin="0,0,0,-100"
+                        VerticalAlignment="Stretch"
+                        Orientation="Vertical">
+                <ListView ItemsSource="{Binding Contacts}"
                       Background="Transparent"
                       BorderThickness="0"
-                      Grid.Row="1"
+                      SelectedItem=""
                       ItemContainerStyle="{StaticResource ContactCard}">
-                
-            </ListView>
+                </ListView>
 
-        </Grid>
-
+            </StackPanel>
+         </Grid>
     </Grid>
-
 </Window>
