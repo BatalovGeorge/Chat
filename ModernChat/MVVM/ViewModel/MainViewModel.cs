@@ -70,7 +70,7 @@ namespace ModernChat.MVVM.ViewModel
                 Contacts.Add(new ContactModel
                 {
                     Username = $"Sanya{i}",
-                    ImageSource= "https://i.imgur.com/GtolBwW.png",
+/*                    ImageSource= "https://i.imgur.com/GtolBwW.png",*/
                     Messages = Messages
                 });
             }

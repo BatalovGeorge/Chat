@@ -42,5 +42,10 @@ namespace ModernChat
             Application.Current.Shutdown();
 
         }
+
+        private void ListView_SelectionChanged()
+        {
+
+        }
     }
 }
